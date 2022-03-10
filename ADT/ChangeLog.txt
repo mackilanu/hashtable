@@ -1,0 +1,37 @@
+Summary changelog file for release.
+
+Release 1.0.8, Mar 06, 2019.
+- Added table_choose_key().
+
+Release 1.0.7, Mar 04, 2019.
+- Bugfix in table_remove().
+- Minor improvement of array_2d_print().
+
+Release 1.0.6, Feb 21, 2019.
+- Added table version without dlist/memhandler.
+- Added Makefiles for each data type.
+- Updated various README.md files.
+
+Release 1.0.5, Jan 23, 2019.
+- Cleaned up list_test.c: No cleanup on failure, improved messages and
+  proper file comment.
+
+Release 1.0.4, Apr 03, 2018.
+- Split MWE to one case per file.
+- Modified list_test to NOT use memhandler.
+
+Release 1.0.3, Feb 08, 2018.
+- Added table implementation.
+
+Release 1.0.2, Jan 29, 2018.
+- Removed table from public area.
+- Cleaned up links, tabbing of many files.
+- Added list_test test file.
+- Added ChangeLog (this file).
+- Updated README.md
+
+Release 1.0.1, Jan 29, 2018.
+- Removed array from public area.
+
+Release 1.0.0, Jan 28, 2018.
+- First public release.
