@@ -6,7 +6,7 @@ struct hashtable {
 };
 
 hashtable* hashtable_empty(int max) {
-    array_1d *arr = array_1d_create(0, max, free);
+    array_1d *arr = array_1d_create(0, max, NULL);
 
     struct hashtable *tbl = calloc(1, sizeof(*tbl));
     tbl->arr = arr;
@@ -57,5 +57,10 @@ int hashtable_lookup(hashtable *tbl, char *key) {
         }
     }
 
+}
+
+void hashtable_kill(hashtable *tbl) {
+    array_1d_kill(tbl->arr);
+    free(tbl);
 }
 

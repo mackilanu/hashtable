@@ -19,5 +19,5 @@ int hashtable_lookup(hashtable *tbl, char *key);
 
 int hashtable_hash(hashtable *tbl, char *key);
 
-
+void hashtable_kill(hashtable *tbl);
 #endif

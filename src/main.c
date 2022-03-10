@@ -10,9 +10,12 @@ int main()
     hashtable_insert(tbl, "Hej");
     hashtable_insert(tbl, "Hej2");
 
-    //idx = -1 if the key was not found.
-    int idx = hashtable_lookup(tbl, "Hej");
 
-    printf("The index is: %d\n", idx);
+    //Index will be -1 if the key was not found
+    printf("Index: %d\n", hashtable_lookup(tbl, "Hej"));
+    printf("Index: %d\n", hashtable_lookup(tbl, "Hej2"));
+    printf("Index: %d\n", hashtable_lookup(tbl, "Hej3"));
+
+    hashtable_kill(tbl);
     return 0;
 }
